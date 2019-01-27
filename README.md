@@ -29,11 +29,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ## Description
 FiveM-DinoWeather gives aggregated areas of the GTA 5 Map their own dynamic (dinomic ;)) weather systems.
 
-This is a very simple plug and play system. Weather will correspond with the seasons of the year by default and I have corresponded certain weather types for these seasons. (Spring, Summer, Fall, and Winter).
+This is a very simple plug and play system. Weather will correspond with the seasons of the year by default, and I have corresponded certain weather types for these seasons. (Spring, Summer, Fall, and Winter).
 
-If you wish to make configuration chabges for the different types of weather in the certain groupings on the map, the table layout is specified inside the `sh_config.lua`.
+If you wish to make configuration changes for the different types of weather in the certain groupings on the map, the table layout is specified inside the `sh_config.lua`.
 
-By default, all of the aggregations are given the same different types of weather that is available to them before ranomization. You can change this to however you'd like. Example, getting rid of the snow weather option at the beach, because it never snows at the beach.
+By default, all of the aggregations are given the same different types of weather that is available to them before randomization. You can change this to however you'd like. Example, getting rid of the snow weather option at the beach because it never snows at the beach.
 
 The following is a table of the aggregations:
 
