@@ -8,7 +8,7 @@ _____  _         __          __        _   _
 |_____/|_|_| |_|\___/ \/  \/ \___|\__,_|\__|_| |_|\___|_|
 
 ```
-A Weahter System that enhances realism by using GTA Natives relating to Zones.
+A Weather System that enhances realism by using GTA Natives relating to Zones.
 Copyright (C) 2019  Jarrett Boice
 
 This program is free software: you can redistribute it and/or modify
