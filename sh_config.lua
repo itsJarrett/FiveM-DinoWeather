@@ -55,77 +55,77 @@ WeatherConfig.weatherSystems = {
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] }, -- Spring
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] }, -- Summer
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] }, -- Fall
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] } -- Winter
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] } -- Winter
   }, -- South LS
   {
     { "MURRI", "LMESA", "SKID", "LEGSQU", "TEXTI", "PBOX", "KOREAT" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Central LS
   {
     { "MIRR", "EAST_V", "DTVINE", "ALTA", "HAWICK", "BURTON", "ROCKF", "MOVIE", "DELPE", "MORN", "RICHM", "GOLF", "WVINE", "DTVINE", "HORS", "LACT", "LDAM" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- North LS
   {
     { "BEACH", "VESP", "VCANA", "DELBE", "PBLUFF" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- LS Beaches
   {
     { "EBURO", "PALHIGH", "NOOSE", "TATAMO" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Eastern Valley
   {
     { "BANHAMC", "BANHAMCA", "CHU", "TONGVAH" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Coastal Beaches
   {
     { "CHIL", "GREATC", "RGLEN", "TONGVAV", "" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- North LS Hills
   {
     { "PALMPOW", "WINDF", "RTRACK", "JAIL", "HARMO", "DESRT", "SANDY", "ZQ_UAR", "HUMLAB", "SANCHIA", "GRAPES", "ALAMO", "SLAB", "CALAFAB" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Grand Senora Desert
   {
     { "MTGORDO", "ELGORL", "BRADP", "BRADT", "MTCHIL", "GALFISH" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Northern Moutains
   {
     { "LAGO", "ARMYB", "NCHU", "CANNY", "MTJOSE" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Zancudo
   {
     { "CMSW", "PALCOV", "OCEANA", "PALFOR", "PALETO", "PROCOB" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
-    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[10], WeatherConfig.weatherTypes[11] }
+    { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Palteo
 }
 
