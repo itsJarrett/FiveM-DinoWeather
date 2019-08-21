@@ -55,7 +55,6 @@ Citizen.CreateThread(function()
         ClearOverrideWeather()
         ClearWeatherTypePersist()
         SetWeatherTypeOverTime(weatherZone[2], 15.0)
-        Citizen.Wait(15000)
         SetWeatherTypePersist(weatherZone[2])
         SetWeatherTypeNow(weatherZone[2])
         SetWeatherTypeNowPersist(weatherZone[2])
@@ -64,3 +63,21 @@ Citizen.CreateThread(function()
     end
   end
 end)
+
+-- Ace Permission command.SetZoneWeather -- REQUIRED!!!
+RegisterCommand("SetZoneWeather", function(source, args, rawCommand)
+  if args[1] == nil then
+    TriggerEvent("chatMessage", "^1You did not specify a Weather Type.")
+  else
+    for i, weatherType in ipairs(WeatherConfig.weatherTypes) do
+      if weatherType == args[1] then
+        local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(PlayerId())))
+        local zoneName = GetNameOfZone(x, y, z)
+        TriggerServerEvent("dinoweather:setWeatherInZone", zoneName, weatherType)
+        TriggerEvent("chatMessage", "^2Weahther set to ^3" .. weatherType .. "^2.")
+        return
+      end
+    end
+    TriggerEvent("chatMessage", "^3The Weather Type you specified does not exist!")
+  end
+end, true)

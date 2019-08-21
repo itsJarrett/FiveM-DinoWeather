@@ -30,7 +30,8 @@ WeatherConfig = setmetatable(WeatherConfig, {})
 
 activeWeatherSystems = {}
 
-WeatherConfig.decemberSnowDays = { 6, 9, 12, 15, 18, 21, 22, 23, 24, 25, 26, 27 }
+WeatherConfig.snowEnabled = true -- Set to false if you do not want snow enabled.
+WeatherConfig.decemberSnowDays = { 6, 9, 12, 15, 18, 21, 22, 23, 24, 25, 26, 27 } -- Days that snow will appear during the month of December.
 
 WeatherConfig.weatherTypes = {
   "CLEAR",
@@ -93,7 +94,7 @@ WeatherConfig.weatherSystems = {
     { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Coastal Beaches
   {
-    { "CHIL", "GREATC", "RGLEN", "TONGVAV", "" },
+    { "CHIL", "GREATC", "RGLEN", "TONGVAV" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
@@ -114,7 +115,7 @@ WeatherConfig.weatherSystems = {
     { WeatherConfig.weatherTypes[8], WeatherConfig.weatherTypes[9], WeatherConfig.weatherTypes[12], WeatherConfig.weatherTypes[11] }
   }, -- Northern Moutains
   {
-    { "LAGO", "ARMYB", "NCHU", "CANNY", "MTJOSE" },
+    { "LAGO", "ARMYB", "NCHU", "CANNY", "MTJOSE", "CCREAK" },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4] },
     { WeatherConfig.weatherTypes[1], WeatherConfig.weatherTypes[2], WeatherConfig.weatherTypes[3] },
     { WeatherConfig.weatherTypes[3], WeatherConfig.weatherTypes[4], WeatherConfig.weatherTypes[5], WeatherConfig.weatherTypes[6], WeatherConfig.weatherTypes[7], WeatherConfig.weatherTypes[8] },
@@ -155,13 +156,23 @@ function isSnowDay()
   return false
 end
 
+function findZoneBySubZone(zoneName)
+  for i, weatherSystem in ipairs(WeatherConfig.weatherSystems) do
+    for _, weatherZone in ipairs(weatherSystem[1]) do
+      if weatherZone == zoneName then
+        return i
+      end
+    end
+  end
+end
+
 function randomizeSystems()
   for i, weatherSystem in ipairs(WeatherConfig.weatherSystems) do
     local currentSeason = getCurrentSeason()
     local availableWeathers = weatherSystem[currentSeason + 1]
     local pickedWeather = availableWeathers[math.random(1, #availableWeathers)]
     for _, weatherZone in ipairs(weatherSystem[1]) do
-      if os.date("*t").month == 12 and isSnowDay() then
+      if os.date("*t").month == 12 and isSnowDay() and WeatherConfig.snowEnabled then
         table.insert(activeWeatherSystems, {weatherZone, "XMAS"})
       else
         table.insert(activeWeatherSystems, {weatherZone, pickedWeather})

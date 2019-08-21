@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 description "DinoWeather"
 author "Slavko Avsenik"
-version "1.0.1"
+version "1.0.2"
 
 server_scripts {
   "sh_config.lua",
@@ -35,5 +35,6 @@ server_scripts {
 }
 
 client_scripts {
+  "sh_config.lua",
   "cl_dinoweather.lua"
 }

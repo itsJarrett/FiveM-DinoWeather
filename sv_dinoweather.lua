@@ -38,3 +38,22 @@ AddEventHandler("dinoweather:syncWeather", function()
   local _source = source
   TriggerClientEvent("dinoweather:syncWeather", _source, activeWeatherSystems)
 end)
+
+RegisterServerEvent("dinoweather:setWeatherInZone")
+AddEventHandler("dinoweather:setWeatherInZone", function(zoneName, weatherType)
+  local zoneArea = findZoneBySubZone(zoneName)
+  for _, weatherZone in ipairs(WeatherConfig.weatherSystems[zoneArea][1]) do
+    local foundInterval = nil
+    for i, activeZone in ipairs(activeWeatherSystems) do
+      if activeZone[1] == weatherZone then
+        foundInterval = i 
+      end
+    end
+    if foundInterval ~= nil then
+      activeWeatherSystems[foundInterval] = {zoneName, weatherType}
+    else
+      table.insert(activeWeatherSystems, {zoneName, weatherType})
+    end
+  end
+  TriggerClientEvent("dinoweather:syncWeather", -1, activeWeatherSystems)
+end)
