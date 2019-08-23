@@ -64,20 +64,24 @@ Citizen.CreateThread(function()
   end
 end)
 
--- Ace Permission command.SetZoneWeather -- REQUIRED!!!
+-- Ace Permission dinoweather.cmds -- REQUIRED!!!
 RegisterCommand("SetZoneWeather", function(source, args, rawCommand)
-  if args[1] == nil then
-    TriggerEvent("chatMessage", "^1You did not specify a Weather Type.")
-  else
-    for i, weatherType in ipairs(WeatherConfig.weatherTypes) do
-      if weatherType == args[1] then
-        local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(PlayerId())))
-        local zoneName = GetNameOfZone(x, y, z)
-        TriggerServerEvent("dinoweather:setWeatherInZone", zoneName, weatherType)
-        TriggerEvent("chatMessage", "^2Weahther set to ^3" .. weatherType .. "^2.")
-        return
+  if IsPlayerAceAllowed(source, "dinoweather.cmds") then
+    if args[1] == nil then
+      TriggerEvent("chatMessage", "^1You did not specify a Weather Type.")
+    else
+      for i, weatherType in ipairs(WeatherConfig.weatherTypes) do
+        if weatherType == args[1] then
+          local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(PlayerId())))
+          local zoneName = GetNameOfZone(x, y, z)
+          TriggerServerEvent("dinoweather:setWeatherInZone", zoneName, weatherType)
+          TriggerEvent("chatMessage", "^2Weahther set to ^3" .. weatherType .. "^2.")
+          return
+        end
       end
+      TriggerEvent("chatMessage", "^3The Weather Type you specified does not exist!")
     end
-    TriggerEvent("chatMessage", "^3The Weather Type you specified does not exist!")
+  else
+    TriggerEvent("chatMessage", "^3No permission!")
   end
-end, true)
+end, false)
