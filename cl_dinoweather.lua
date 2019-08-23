@@ -66,7 +66,7 @@ end)
 
 -- Ace Permission dinoweather.cmds -- REQUIRED!!!
 RegisterCommand("SetZoneWeather", function(source, args, rawCommand)
-  if IsPlayerAceAllowed(source, "dinoweather.cmds") then
+  if IsAceAllowed("dinoweather.cmds") then
     if args[1] == nil then
       TriggerEvent("chatMessage", "^1You did not specify a Weather Type.")
     else
