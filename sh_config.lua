@@ -167,6 +167,7 @@ function findZoneBySubZone(zoneName)
 end
 
 function randomizeSystems()
+  activeWeatherSystems = {}
   for i, weatherSystem in ipairs(WeatherConfig.weatherSystems) do
     local currentSeason = getCurrentSeason()
     local availableWeathers = weatherSystem[currentSeason + 1]
